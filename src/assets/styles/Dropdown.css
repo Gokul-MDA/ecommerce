@@ -1,0 +1,22 @@
+.dropDown__container{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+   .nav__closeButton{
+       display: inline;
+       border: none;
+       background-color: transparent;
+       color: #800080;
+       width: 30px;
+       height: 30px;
+       margin-top: 30px;
+       margin-left: 200px;
+       padding: 0;
+   }
+
+   .catagories{
+       margin-top: 30px;
+   }
+}
+

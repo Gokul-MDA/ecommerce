@@ -1,3 +1,11 @@
 .slider__img{
-    height: 500px;
+    height: 450px;
+}
+
+@media screen and (max-width:768px) {
+
+    .slider__img{
+        height: 250px;
+    }
+    
 }

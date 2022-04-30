@@ -1,24 +1,32 @@
 import React from "react";
 import "../assets/styles/Nav.css";
-import cartIcon from "../assets/images/cart-fill.svg"
-import user from "../assets/images/person-fill.svg"
+import cartIcon from "../assets/images/cart-fill.svg";
+import user from "../assets/images/person-fill.svg";
+import { FaBars } from "react-icons/fa";
 
-function NavBar() {
+const NavBar = ({ toggle }) => {
   return (
     <div className="navBar">
       <div className="nav">
-        <div className="nav__brandName">hello</div>
+        <div className="nav__title">
+          <div className="nav__mobile">
+            <FaBars className="nav__openButton" onClick={toggle} />
+          </div>
+          <div className="nav__brandName">hello</div>
+        </div>
+
         <div className="nav__searchBar">
           <input type="text" placeholder="Search" />
         </div>
         <div className="nav__menuBar">
           <button className="navButton">
-          <img src={cartIcon} className="nav__icon" alt="" />
-          Cart
+            <img src={user} className="nav__icon nav__user" alt="" />
+            <p>Login</p>
           </button>
           <button className="navButton">
-            <img src={user} className="nav__icon" alt="" />
-            Login</button>
+            <img src={cartIcon} className="nav__icon  nav__cart" alt="" />
+            <p>Cart</p>
+          </button>
         </div>
       </div>
       <div className="nav__dropdown">
@@ -65,6 +73,6 @@ function NavBar() {
       </div>
     </div>
   );
-}
+};
 
 export default NavBar;
