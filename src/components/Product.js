@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/styles/Product.css";
 import product3 from "../assets/images/product3.jpg";
 import product2 from "../assets/images/product2.jpg";
-import { useState, useEffect } from "react";
+import {  useEffect } from "react";
 import axios from "axios"
 
 
