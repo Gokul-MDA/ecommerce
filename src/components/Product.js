@@ -1,60 +1,96 @@
 import React from "react";
 import "../assets/styles/Product.css";
-import product1 from "../assets/images/product1.jpg";
-import product2 from "../assets/images/product2.jpg";
 import product3 from "../assets/images/product3.jpg";
+import product2 from "../assets/images/product2.jpg";
+import { useState, useEffect } from "react";
+import axios from "axios"
+
 
 function Product() {
+
+  const products = [
+    {
+      image: product3,
+      name: "oneplus Nord 2 - Black (256GB) 8GB ram",
+      description: "lorem",
+      price: "$999",
+      offer: "10%",
+      del_price: "$1100",
+    },
+
+    {
+      image: product2,
+      name: "oneplus Nord ",
+      description: "lorem",
+      price: "$999",
+      offer: "10%",
+      del_price: "$1100",
+    },
+    {
+      image: product2,
+      name: "oneplus Nord ",
+      description: "lorem",
+      price: "$999",
+      offer: "10%",
+      del_price: "$1100",
+    },
+    {
+      image: product2,
+      name: "oneplus Nord ",
+      description: "lorem",
+      price: "$999",
+      offer: "10%",
+      del_price: "$1100",
+    },
+    {
+      image: product2,
+      name: "oneplus Nord ",
+      description: "lorem",
+      price: "$999",
+      offer: "10%",
+      del_price: "$1100",
+    },
+    {
+      image: product2,
+      name: "oneplus Nord ",
+      description: "lorem",
+      price: "$999",
+      offer: "10%",
+      del_price: "$1100",
+    }
+  ];
+
+useEffect(() => {
+  
+  axios.get("")
+
+
+}, [])
+
+
   return (
     <div className="product">
-      <div className="product__card">
-        <div className="product__image">
-          <img src={product1} alt="iphone" />
-        </div>
-        <div className="product__details">
-          <div className="product__title">Apple iPhone 13 (256GB) -Purple</div>
-          <div className="product__price"> Price $1200</div>
-          <div className="product__delPrice">
-            Old Price <del>$1300</del>
+      {products.map((product, _id) => {
+        return (
+          <div className="product__card">
+            <div className="product__image">
+              <img src={product.image} alt="iphone" />
+            </div>
+            <div className="product__details">
+              <div className="product__title">{product.name}</div>
+              <div className="product__description">{product.description}</div>
+              <div>
+                {" "}
+                <span className="product__price">{product.price}</span>
+                <span className="product__offer">  ({product.offer})</span>
+              </div>
+              <span className="product__delprice"><del>{product.del_price}</del></span>
+
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="product__card">
-        <div className="product__image">
-          <img src={product2} alt="iphone" />
-        </div>
-        <div className="product__details">
-          <div className="product__title">OnePlus Nord 2 (256GB) -Black</div>
-          <div className="product__price"> Price $999</div>
-          <div className="product__delPrice">
-            Old Price <del>$1100</del>
-          </div>
-        </div>
-      </div>
-      <div className="product__card">
-        <div className="product__image">
-          <img src={product3} alt="iphone" />
-        </div>
-        <div className="product__details">
-          <div className="product__title">OnePlus Nord 2 (256GB) -Black</div>
-          <div className="product__price"> Price $999</div>
-          <div className="product__delPrice">
-            Old Price <del>$1100</del>
-          </div>
-        </div>
-      </div>
-      <div className="product__card">
-        <div className="product__image">
-          <img src={product3} alt="iphone" />
-        </div>
-        <div className="product__details">
-          <div className="product__title">OnePlus Nord 2 (256GB) -Black</div>
-          <div className="product__price"> Price $999</div>
-          <div className="product__delPrice">
-            Old Price <del>$1100</del>
-          </div>
-        </div>
-      </div>
+        );
+      })}
+
     </div>
   );
 }

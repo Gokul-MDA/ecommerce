@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 
 const NavBar = ({ toggle }) => {
   return (
+
     <div className="navBar">
       <div className="nav">
         <div className="nav__title">

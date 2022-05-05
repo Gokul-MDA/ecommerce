@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import Slider from "./components/Slider";
+import Carousel from "./components/Slider";
 import Dropdown from "./components/Dropdown";
 import Product from "./components/Product";
 import Footer from "./components/Footer";
@@ -17,7 +17,7 @@ function App() {
     <>
       <NavBar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
-      <Slider />
+      <Carousel />
       <Product />
       <Footer />
     </>

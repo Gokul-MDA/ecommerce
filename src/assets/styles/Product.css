@@ -1,6 +1,7 @@
 .product{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
@@ -9,39 +10,42 @@
 .product__card{
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
-    background-color: #000000;
-    height: auto;
-    width: 350px;
+    height: 400px;
+    width: 250px;
     margin-top: 50px;
+    padding: 10px;
+    border: 1px solid gainsboro;
 }
 
 .product__image > img{
-    height: 350px;
-    width: 350px;
+    height: 200px;
+    width: 200px;
 }
 
 .product__details{
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 1px solid gainsboro;
+
 }
 
 .product__title{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
-    color: white;
 }
 
 .product__price{
     margin-top: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-    
+    font-size: 17px;
+    font-weight: 600;
+    color: red;
 }
 
 .product__delPrice{
     margin-top: 5px;
-    color: white;
+    font-size: 14px;
 }
 
 @media screen and (max-width:768px) {
