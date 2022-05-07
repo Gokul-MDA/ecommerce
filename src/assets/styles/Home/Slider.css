@@ -1,0 +1,95 @@
+.slider {
+  position: relative;
+  margin-top: 110px;
+}
+
+.slider__img {
+  height: 500px;
+  width: 100%;
+}
+
+.today-deals-title {
+  margin-top: 40px;
+  font-size: 22px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.carousel__card {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+  margin-top: 20px;
+  border: 1px solid gainsboro;
+}
+
+.carousel__image > img {
+  height: 200px;
+  width: 250px;
+}
+
+.carousel__details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+  border-top: 1px solid gainsboro;
+}
+
+.carousel__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.carousel__price {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: red;
+}
+
+.carousel__delPrice {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+  }
+  .carousel__card {
+    width: 200px;
+    height: 300px;
+    margin-left: 0px;
+  }
+
+  .carousel__image > img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .carousel__details {
+    padding: 10px;
+  }
+
+  .carousel__title {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__img > img {
+    height: 250px;
+    width: 100% k;
+  }
+
+  .slider {
+    width: 100%;
+  }
+}

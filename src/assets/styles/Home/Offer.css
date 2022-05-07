@@ -1,0 +1,33 @@
+.offer__title {
+  margin-top: 40px;
+  font-size: 22px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.offers {
+  margin-left: 35px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 35px;
+}
+
+.offer__card {
+  height: 250px;
+  width: 400px;
+  /* background-color: aqua; */
+}
+
+.offer__card > img {
+  height: 200px;
+  width: 400px;
+}
+
+.offer__card > button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+}

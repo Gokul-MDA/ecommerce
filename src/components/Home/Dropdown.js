@@ -1,10 +1,7 @@
-
 import React from "react";
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
-
-
-import "../assets/styles/Dropdown.css";
+import "../../assets/styles/Home/Dropdown.css";
 
 const DropdownContainer = styled.div`
   display: none;
