@@ -15,6 +15,8 @@ const NavBar = ({ toggle }) => {
           <div className="nav__brandName">hello</div>
         </div>
 
+        <div className="nav__location"></div>
+
         <div className="nav__searchBar">
           <input type="text" placeholder="Search" />
         </div>

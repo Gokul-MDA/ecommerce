@@ -15,18 +15,23 @@
   font-weight: 600;
 }
 
+.todayDeals {
+  width: 98%;
+  margin-left: 35px;
+}
+
 .carousel__card {
   display: flex;
   flex-direction: column;
   height: 300px;
   width: 250px;
   margin-top: 20px;
-  border: 1px solid gainsboro;
 }
 
 .carousel__image > img {
-  height: 200px;
-  width: 250px;
+  border-radius: 10px;
+  height: 180px;
+  width: 220px;
 }
 
 .carousel__details {
@@ -34,24 +39,11 @@
   flex-direction: column;
   padding: 10px;
   margin-top: 10px;
-  border-top: 1px solid gainsboro;
 }
 
 .carousel__title {
   font-size: 18px;
   font-weight: 600;
-}
-
-.carousel__price {
-  margin-top: 10px;
-  font-size: 17px;
-  font-weight: 600;
-  color: red;
-}
-
-.carousel__delPrice {
-  margin-top: 5px;
-  font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {

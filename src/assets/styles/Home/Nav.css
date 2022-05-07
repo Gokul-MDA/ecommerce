@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   height: auto;
-  background-color: #8224e3;
+  background-color: white;
   z-index: 1;
   align-items: center;
 }
@@ -15,7 +15,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #8224e3;
+  background-color: white;
 
   /* position: fixed; */
 }
@@ -27,19 +27,20 @@
 .nav__brandName {
   font-size: 32px;
   font-weight: 600;
-  color: white;
+  color: #8224e3;
   margin-left: 30px;
 }
 
 .nav__searchBar > input {
   width: 550px;
-  height: 30px;
+  height: 40px;
   font-size: 14px;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid #8224e3;
+  border-radius: 10px;
   background-image: url(../../images/search.svg);
   background-repeat: no-repeat;
   background-position: 520px;
+  background-color: white;
 }
 
 .nav__menuBar {
@@ -54,13 +55,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 90px;
-  height: 30px;
+  width: 100px;
+  height: 32px;
   color: white;
+  font-weight: 600;
   font-size: 16px;
-  font-weight: 500;
   margin-left: 10px;
   border: none;
+  border-radius: 20px;
   background-color: #8224e3;
 }
 
@@ -83,11 +85,11 @@
 .nav__dropdown {
   display: flex;
   width: 100%;
-  background-color: black;
+  background-color: #1f1f1f;
   position: relative;
 }
 .dropbtn {
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
   padding: 10px;
   font-size: 13px;

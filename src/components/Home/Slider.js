@@ -42,17 +42,18 @@ function Carousel() {
       offer: "10%",
       del_price: "$1100",
     },
+
     {
-      image: beauty,
-      name: "Beauty Products",
+      image: electronics,
+      name: "Electronics ",
       description: "lorem",
       price: "$999",
       offer: "10%",
       del_price: "$1100",
     },
     {
-      image: electronics,
-      name: "Electronics ",
+      image: beauty,
+      name: "Beauty Products",
       description: "lorem",
       price: "$999",
       offer: "10%",
@@ -126,23 +127,24 @@ function Carousel() {
       </Slider>
 
       <p className="today-deals-title">Today's Deals</p>
-
-      <Slider {...multiCarousel}>
-        {products.map((product, _id) => {
-          return (
-            <div>
-              <div className="carousel__card">
-                <div className="carousel__image">
-                  <img src={product.image} alt="iphone" />
-                </div>
-                <div className="carousel__details">
-                  <div className="carousel__title">{product.name}</div>
+      <div className="todayDeals">
+        <Slider {...multiCarousel}>
+          {products.map((product, _id) => {
+            return (
+              <div>
+                <div className="carousel__card">
+                  <div className="carousel__image">
+                    <img src={product.image} alt="iphone" />
+                  </div>
+                  <div className="carousel__details">
+                    <div className="carousel__title">{product.name}</div>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </Slider>
+            );
+          })}
+        </Slider>
+      </div>
     </div>
   );
 }

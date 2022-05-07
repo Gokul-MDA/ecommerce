@@ -13,21 +13,38 @@
 }
 
 .offer__card {
-  height: 250px;
+  height: 370px;
   width: 400px;
-  /* background-color: aqua; */
+  border: 1px solid gainsboro;
 }
 
 .offer__card > img {
-  height: 200px;
+  border: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 220px;
   width: 400px;
 }
 
+.offer__card > p {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.offer__card > h6 {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
 .offer__card > button {
-  background-color: black;
-  color: white;
-  border: none;
+  background-color: white;
+  color: Black;
+  border: 1px solid black;
+  border-radius: 20px;
   padding: 8px;
   font-size: 14px;
-  width: 100%;
+  font-weight: 600;
+  width: 90px;
+  margin-left: 300px;
 }

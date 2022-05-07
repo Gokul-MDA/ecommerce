@@ -3,18 +3,13 @@ import "../../assets/styles/Home/RecentSearch.css";
 import Slider from "react-slick";
 
 import product2 from "../../assets/images/product2.jpg";
-
-import home from "../../assets/images/home.jpg";
-import laptop from "../../assets/images/laptop.jpg";
-import beauty from "../../assets/images/beauty.jpg";
-import electronics from "../../assets/images/electronics.jpg";
-import mobiles from "../../assets/images/mobiles.jpg";
+import product3 from "../../assets/images/product3.jpg";
 
 function RecentSearch() {
   const products = [
     {
-      image: laptop,
-      name: "Laptops",
+      image: product3,
+      name: "oneplus Nord 2 - Black (256GB) 8GB ram",
       description: "lorem",
       price: "$999",
       offer: "10%",
@@ -22,32 +17,24 @@ function RecentSearch() {
     },
 
     {
-      image: mobiles,
-      name: "Mobiles ",
+      image: product2,
+      name: "oneplus Nord ",
       description: "lorem",
       price: "$999",
       offer: "10%",
       del_price: "$1100",
     },
     {
-      image: home,
-      name: "Home Appliances ",
+      image: product2,
+      name: "oneplus Nord ",
       description: "lorem",
       price: "$999",
       offer: "10%",
       del_price: "$1100",
     },
     {
-      image: beauty,
-      name: "Beauty Products",
-      description: "lorem",
-      price: "$999",
-      offer: "10%",
-      del_price: "$1100",
-    },
-    {
-      image: electronics,
-      name: "Electronics ",
+      image: product2,
+      name: "oneplus Nord ",
       description: "lorem",
       price: "$999",
       offer: "10%",
@@ -103,14 +90,26 @@ function RecentSearch() {
         <Slider {...multiCarousel}>
           {products.map((product, _id) => {
             return (
-              <div>
-                <div className="carousel__card">
-                  <div className="carousel__image">
-                    <img src={product.image} alt="iphone" />
+              <div className="recent__card">
+                <div className="recent__image">
+                  <img src={product.image} alt="iphone" />
+                </div>
+                <div className="recent__details">
+                  <div className="recent__title">{product.name}</div>
+                  <div className="recent__description">
+                    {product.description}
                   </div>
-                  <div className="carousel__details">
-                    <div className="carousel__title">{product.name}</div>
+                  <div>
+                    {" "}
+                    <span className="recent__price">{product.price}</span>
+                    <span className="recent__offer">
+                      {" "}
+                      ({product.offer}) offer{" "}
+                    </span>
                   </div>
+                  <span className="recent__delprice">
+                    <del>{product.del_price}</del>
+                  </span>
                 </div>
               </div>
             );

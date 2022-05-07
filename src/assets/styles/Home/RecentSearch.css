@@ -4,3 +4,59 @@
   margin-left: 20px;
   font-weight: 600;
 }
+
+.recentProducts {
+  width: 98%;
+  margin-left: 35px;
+}
+
+.recent__card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.recent__image > img {
+  border-radius: 10px;
+  height: 150px;
+  width: 180px;
+}
+
+.recent_details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.recent__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.recent__details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+  /* border-top: 1px solid gainsboro; */
+}
+
+.recent__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.recent__price {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: red;
+}
+
+.recent__delPrice {
+  margin-top: 5px;
+  font-size: 14px;
+}
