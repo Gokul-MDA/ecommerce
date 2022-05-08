@@ -1,0 +1,46 @@
+.productList {
+  margin-top: 200px;
+  margin-left: 300px;
+}
+
+.productList__card {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.productList__image > img {
+  height: 220px;
+  width: 220px;
+}
+
+.productList__name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.productList__priceList {
+  line-height: 10px;
+}
+
+.productList__price {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.productList__offerPrice {
+  font-size: 16px;
+  color: gray;
+}
+
+.productList__bankOffer {
+  color: gray;
+  font-weight: 600;
+}
+
+.productList__delivery {
+  margin-top: 30px;
+  line-height: 8px;
+}
