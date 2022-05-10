@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import "../../assets/styles/Home/Nav.css";
 import cartIcon from "../../assets/images/cart-fill.svg";
 import user from "../../assets/images/person-fill.svg";
 import { FaBars } from "react-icons/fa";
+import Modal from "react-bootstrap/Modal"
+import pin from "../../assets/images/pin.png"
 
 const NavBar = ({ toggle }) => {
+  const [show, setShow] = useState(true)
   return (
     <div className="navBar">
       <div className="nav">
@@ -15,7 +18,20 @@ const NavBar = ({ toggle }) => {
           <div className="nav__brandName">hello</div>
         </div>
 
-        <div className="nav__location"></div>
+        <div className="nav__location">
+          <button className="location__button" onClick={()=>setShow(true)}>
+            <img src={pin} alt=""/>
+            location</button>
+         <Modal show={show}>
+          <Modal.Body>
+            Enter Location
+            <input type="text" />
+          </Modal.Body>
+          <Modal.Footer>
+            <button onClick={()=> setShow(false)}>Close</button>
+          </Modal.Footer>
+         </Modal>
+        </div>
 
         <div className="nav__searchBar">
           <input type="text" placeholder="Search" />

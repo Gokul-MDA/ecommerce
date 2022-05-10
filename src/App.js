@@ -3,8 +3,8 @@ import "./App.css";
 import NavBar from "./components/Home/NavBar";
 import Dropdown from "./components/Home/Dropdown";
 import Footer from "./components/Home/Footer";
-// import Home from "./components/Home/Home";
-import ProductList from "./components/ProductList/ProductList";
+import Home from "./components/Home/Home";
+// import ProductList from "./components/ProductList/ProductList";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +17,8 @@ function App() {
     <>
       <NavBar toggle={toggle} />
       <Dropdown isOpen={isOpen} toggle={toggle} />
-      {/* <Home /> */}
-      <ProductList />
+      <Home />
+      {/* <ProductList /> */}
       <Footer />
     </>
   );

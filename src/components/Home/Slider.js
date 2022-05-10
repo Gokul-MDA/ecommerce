@@ -113,16 +113,16 @@ function Carousel() {
     <div className="slider">
       <Slider {...settings}>
         <div className="slider__img">
-          <img src={iphone} className="slider__img" alt="" />
+          <img src={iphone}  width="100%" height="500px"  alt="" />
         </div>
         <div className="slider__img">
-          <img src={samsung} className="slider__img" alt="" />
+          <img src={samsung} width="100%" height="500px"   alt="" />
         </div>
         <div className="slider__img">
-          <img src={redmi} className="slider__img" alt="" />
+          <img src={redmi}   width="100%" height="500px" alt="" />
         </div>
         <div className="slider__img">
-          <img src={realme} className="slider__img" alt="" />
+          <img src={realme}  width="100%" height="500px"  alt="" />
         </div>
       </Slider>
 

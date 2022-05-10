@@ -2,11 +2,11 @@
   margin-top: 50px;
   height: 300px;
   width: 100%;
-  background-color: white;
+  background-color: #531792;
 }
 
 .footer__content {
   padding: 10px;
   font-size: 18px;
-  color: black;
+  color: white;
 }
